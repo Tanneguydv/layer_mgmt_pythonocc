@@ -1,10 +1,10 @@
 from OCC.Display.SimpleGui import init_display
 display,start_display, add_menu,add_functionto_menu = init_display()
 from OCC.Core.BRepPrimAPI import BRepPrimAPI_MakeBox
-from OCC.Core.gp import gp_Pnt
-box = BRepPrimAPI_MakeBox(gp_Pnt(),10,10,100).Shape()
-box2 = BRepPrimAPI_MakeBox(gp_Pnt(),100,10,10).Shape()
-box3 = BRepPrimAPI_MakeBox(gp_Pnt(),10,100,10).Shape()
+
+box = BRepPrimAPI_MakeBox(10,10,100).Shape()
+box2 = BRepPrimAPI_MakeBox(100,10,10).Shape()
+box3 = BRepPrimAPI_MakeBox(10,100,10).Shape()
 
 class Layer():
 
